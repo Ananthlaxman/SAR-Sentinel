@@ -1,0 +1,197 @@
+
+.change-detection-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.change-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.change-heading h1 {
+  font-size: 30px;
+  margin: 12px 0 8px;
+}
+
+.change-heading p,
+.change-section-heading p {
+  color: #8295ad;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.change-heading > svg {
+  color: #53caff;
+}
+
+.change-search-panel h3,
+.change-section-heading h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+  margin: 0 0 7px;
+}
+
+.change-search-panel h3 svg,
+.change-section-heading h3 svg {
+  color: #53caff;
+}
+
+.change-search-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: end;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.change-search-fields label,
+.acquisition-selectors label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: #9bacc0;
+  font-size: 11px;
+  min-width: 0;
+}
+
+.change-search-fields select,
+.acquisition-selectors select {
+  width: 100%;
+  min-width: 0;
+  background: #102238;
+  border: 1px solid #29435d;
+  color: #e5effa;
+  padding: 12px;
+  border-radius: 7px;
+}
+
+.change-search-fields .primary-button {
+  width: 180px;
+  cursor: pointer;
+}
+
+.change-search-fields button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.change-section-heading {
+  margin-bottom: 18px;
+}
+
+.change-section-heading p {
+  margin: 0;
+}
+
+.acquisition-selectors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.before-text {
+  color: #53caff !important;
+}
+
+.after-text {
+  color: #46dda8 !important;
+}
+
+.acquisition-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.acquisition-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px;
+  background: #101f31;
+  border: 1px solid #20354d;
+  border-radius: 8px;
+  min-width: 0;
+}
+
+.acquisition-row > svg {
+  flex-shrink: 0;
+  color: #53caff;
+}
+
+.acquisition-row > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.acquisition-row strong,
+.acquisition-row small {
+  display: block;
+  overflow-wrap: anywhere;
+}
+
+.acquisition-row strong {
+  font-size: 10px;
+}
+
+.acquisition-row small {
+  color: #8295ad;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.acquisition-row > span {
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.comparison-workspace {
+  min-width: 0;
+}
+
+.change-message {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  color: #91a6bc;
+  background: #101f31;
+  border: 1px solid #20354d;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.change-error {
+  color: #ff8994;
+  border-color: #60303c;
+}
+
+.change-search-panel .catalog-note {
+  margin-top: 13px;
+  color: #8295ad;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 750px) {
+  .change-search-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .change-search-fields .primary-button {
+    width: 100%;
+  }
+
+  .acquisition-selectors {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,170 @@
+
+.explorer-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.explorer-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #50c9ff;
+}
+
+.explorer-heading h2 {
+  color: #e8f0fa;
+  margin: 10px 0;
+}
+
+.explorer-heading p {
+  color: #8295ad;
+  font-size: 12px;
+}
+
+.explorer-search h3,
+.results-heading h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+}
+
+.explorer-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.explorer-fields label {
+  color: #94a8bd;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.explorer-fields select {
+  background: #122238;
+  border: 1px solid #28445d;
+  color: #e8f0fa;
+  padding: 12px;
+  border-radius: 7px;
+}
+
+.search-button {
+  min-height: 40px;
+}
+
+.search-button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.results-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #50c9ff;
+}
+
+.results-heading span {
+  font-size: 11px;
+  color: #8295ad;
+}
+
+.explorer-message {
+  padding: 25px;
+  text-align: center;
+  border: 1px dashed #29415b;
+  border-radius: 10px;
+  color: #8da3ba;
+  font-size: 12px;
+}
+
+.error-message {
+  color: #ff8d9a;
+}
+
+.observation-card {
+  background: #0d1828;
+  border: 1px solid #263c55;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+.observation-card.selected {
+  border-color: #50c9ff;
+}
+
+.observation-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.observation-info > svg {
+  color: #50c9ff;
+}
+
+.observation-info strong,
+.observation-info small {
+  display: block;
+}
+
+.observation-info strong {
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.observation-info small {
+  color: #8295ad;
+  font-size: 10px;
+  margin-top: 6px;
+}
+
+.observation-info small svg {
+  display: inline;
+  vertical-align: middle;
+}
+
+.select-observation {
+  margin-top: 15px;
+  padding: 9px 15px;
+  background: #102d42;
+  border: 1px solid #28536d;
+  border-radius: 7px;
+  color: #50c9ff;
+  font-size: 11px;
+}
+
+.observation-details {
+  margin-top: 15px;
+  padding: 12px;
+  background: #101f32;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.observation-details p {
+  color: #a5b7ca;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media(max-width: 700px) {
+  .explorer-fields {
+    grid-template-columns: 1fr;
+  }
+}

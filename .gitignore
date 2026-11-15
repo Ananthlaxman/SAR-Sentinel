@@ -1,0 +1,39 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+backend/data/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+build/
+.vite/
+
+# Ignore backup copy
+/frontend-backup/
+
+# Downloaded satellite data
+*.h5
+*.h5.part
+*.nc
+*.tif
+*.tiff
+*.zip
+
+# Logs
+*.log
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,62 @@
+
+.sar-map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.nisar-preview-toggle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  padding: 10px 14px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.nisar-preview-panel {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  z-index: 1000;
+  width: min(360px, calc(100% - 30px));
+  padding: 12px;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  background: #111827;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.nisar-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.nisar-preview-header button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.nisar-preview-panel img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #020617;
+}
+
+.nisar-preview-panel p,
+.nisar-preview-panel small {
+  color: #cbd5e1;
+  font-size: 12px;
+}
